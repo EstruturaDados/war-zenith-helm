@@ -72,3 +72,18 @@ void destroy_territory(Territory *t)
     t->name = NULL;
     t->color = NULL;
 }
+
+void list_territories(Territory *t)
+{
+    for (int i = 0; i < MAX_TERRITORIES; i++)
+    {
+        puts("-------------------------");
+        printf("     Territorio %d     \n", i + 1);
+        puts("-------------------------");
+
+        printf("Nome: %s\n", t[i].name);
+        printf("Cor: %s\n", t[i].color);
+        printf("Quantidade de tropas: %d\n", t[i].number_troops);
+        puts("==============================");
+    }
+}

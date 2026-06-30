@@ -4,6 +4,7 @@
 #include "utils.h"
 
 Territory *get_territories(int p);
-void destroy_territory(Territory t);
+void destroy_territory(Territory *t);
+void list_terriotories(Territory *t);
 
 #endif
